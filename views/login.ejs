@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ("partials/head") %> 
+<!-- My CSS -->
+<link rel="stylesheet" href="css/homepage2.css">
+  
+<body>
+  <% if(messages.error) {%>
+    <h5><%= messages.error %></h5>
+    <% } %>
+    
+    <%- include ("partials/navbar") %> 
+    <h1>Log In</h1>
+    <li>
+      <ul>
+      <div class="container mt-3 d-flex justify-content-center">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+              <form action="/login" method="POST">
+                <div class="form-group row">
+                    <label for="username" class="col-sm-4 col-form-label">Username</label>
+                  <div class="col-sm-8">
+                    <input type="text" name="username" class="form-control" placeholder ="Insert your username" >
+                  </div>
+            </div>
+                  <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                    <div class="col-sm-8">
+                      <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                  </div>
+                     <button type="submit">login</button>
+              </form> 
+              
+        </div>
+      </div>
+    </ul>
+     <ul>
+      <div class="d-flex justify-content-center">
+      <h6>Note: You should regist yourself before play the Game!</h6>
+    </div> 
+  </ul>
+   </li>
+  </body>
+</html>

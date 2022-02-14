@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
+    <h1>LET'S PLAY THE GAME</h1>
+
+    <div class="container">
+      <div class="area-player">
+        <ul>
+          <il>
+            <a href="#" onclick="getPilihan('paper')">
+              <img src="image/kertas.png" class="paper" />
+            </a>
+          </il>
+
+          <il>
+            <a href="#" onclick="getPilihan('rock')">
+              <img src="image/batu.png" class="rock" />
+            </a>
+          </il>
+
+          <il>
+            <a href="#" onclick="getPilihan('scissor')">
+              <img src="image/gunting.png" class="scissor" />
+            </a>
+          </il>
+        </ul>
+      </div>
+
+      <div class="info"></div>
+      <div class="text">
+        <p style="font-size: 25px">
+          COMPUTER'S CHOICE: <span id="comp"></span>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
