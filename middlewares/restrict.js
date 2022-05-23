@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
   // Bila tidak, kita akan redirect ke halaman login
   res.redirect("/login");
 };
-const passports = require("../lib/passport");
-module.exports = passports.authenticate("jwt", {
-  session: false,
-});
+// const passports = require("../lib/passport");
+// module.exports = passports.authenticate("jwt", {
+//   session: false,
+// });
