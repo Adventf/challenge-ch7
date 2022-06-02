@@ -4,7 +4,7 @@ const session = require("express-session");
 const flash = require("express-flash");
 const bodyParser = require("body-parser");
 
-const { PORT = 3003 } = process.env;
+const { PORT = 3004 } = process.env;
 
 app.use(bodyParser.json());
 app.use(express.static("public"));
