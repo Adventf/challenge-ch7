@@ -60,7 +60,7 @@ module.exports = {
     });
   },
 
-  selamat: (req, res) => {
+  updateLogin: (req, res) => {
     User.update(
       {
         username: req.body.username,
@@ -76,7 +76,7 @@ module.exports = {
       });
   },
 
-  datang: (req, res) => {
+  updateSkor: (req, res) => {
     Skor.update(
       {
         username: req.body.username,
@@ -92,12 +92,12 @@ module.exports = {
       });
   },
 
-  kalian: (req, res) => {
+  deleteLogin: (req, res) => {
     User.destroy({ where: { id: req.params.id } }).then((a) => {
       res.status(200).json(a);
     });
   },
-  semua: (req, res) => {
+  deleteSkor: (req, res) => {
     Skor.destroy({ where: { id: req.params.id } }).then((a) => {
       res.status(200).json(a);
     });

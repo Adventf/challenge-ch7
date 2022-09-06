@@ -20,9 +20,9 @@ router.get("/data/:id", auth.show);
 router.get("/skor", auth.skor);
 router.get("/skor/:id", auth.goal);
 
-router.put("/login/:id", auth.selamat);
-router.put("/skor/:id", auth.datang);
-router.delete("/login/:id", auth.kalian);
-router.delete("/skor/:id", auth.semua);
+router.put("/login/:id", auth.updateLogin);
+router.put("/skor/:id", auth.updateSkor);
+router.delete("/login/:id", auth.deleteLogin);
+router.delete("/skor/:id", auth.deleteSkor);
 
 module.exports = router;
